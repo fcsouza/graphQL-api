@@ -29,6 +29,33 @@
 ## 🧐 Sobre <a name = "fabricio"></a>
 
 
+## 🏁 Iniciando <a name = "getting_started"></a>
+Instruções de como acessar as rotas e instalação.
+```bash
+http://localhost:3100/graphql
+
+
+Make a Get Request
+query{
+  categories{
+    name
+    description
+    _id
+  }
+}
+
+Make a Post/Mutation Request
+
+mutation{
+  createCategory(categoryInput : {
+    description: "Categoria de ação",
+    name: "Ação"
+  }),{
+    _id
+  }
+}
+```
+
 
 ### ⚒ Instalando <a name = "installing"></a>
 ```bash
@@ -41,6 +68,11 @@ $ cd graphQL-api/
 ```
 
 ## ⛏️ Tecnologias Utilizadas <a name = "built_using"></a>
+- [Express](https://expressjs.com/) - Server Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Apollo Server](https://nodejs.org/en/) - Apollo Server is a community-maintained open-source GraphQL server
+- [Mongoose](https://nodejs.org/en/) - Mongoose provides a straight-forward, schema-based solution to model your application data. 
+- [TypeGraphQL](https://nodejs.org/en/) - Modern framework for GraphQL API in Node.js
 
 ## ✍️ Autor <a name = "authors"></a>
 
